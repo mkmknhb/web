@@ -6,7 +6,7 @@ var supports_touch = "ontouchstart" in window || navigator.msMaxTouchPoints;
 if (!supports_touch) {
   const html = document.getElementsByTagName("html")[0];
   const longcat_src =
-    "https://cdn.glitch.com/d350c9dc-f43b-434e-8886-3c62df1297b2%2Flongcat.png?v=1576790382865";
+    "https://as1.ftcdn.net/v2/jpg/02/62/50/94/1000_F_262509449_GmifCYLNVWBQShf6CFpbecO6JDTiHWvN.jpg";
   const longcat_element = document.createElement("img");
   longcat_element.src = longcat_src;
   longcat_element.onload = () => {
