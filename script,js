@@ -1,5 +1,4 @@
-// the most special/chaotic part of this app is not that it's a gift to potch from jennmoney...
-//   but that the variable names are s_n_a_k_e case hehehe
+
 
 var supports_touch = "ontouchstart" in window || navigator.msMaxTouchPoints;
 
