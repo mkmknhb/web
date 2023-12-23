@@ -7,15 +7,16 @@
 body {
   margin: 2em;
   font-size: 2em;
+  color: black;
   line-height: 1.5em;
 }
 
 h1 {
   font-style: italic;
-  color: magenta;
+  color: blueviolet;
 }
 
 code {
   padding: .2em;
-  background: cyan;
+  background: lightblue;
 }
