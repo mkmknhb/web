@@ -1,8 +1,25 @@
-document.addEventListener('DOMContentLoaded', function() {
-    const clickButton = document.getElementById('clickButton');
-    const output = document.getElementById('output');
+// the most special/chaotic part of this app is not that it's a gift to potch from jennmoney...
+//   but that the variable names are s_n_a_k_e case hehehe
 
-    clickButton.addEventListener('click', function() {
-        output.textContent = 'Button Clicked!';
+var supports_touch = "ontouchstart" in window || navigator.msMaxTouchPoints;
+
+if (!supports_touch) {
+  const html = document.getElementsByTagName("html")[0];
+  const longcat_src =
+    "https://cdn.glitch.com/d350c9dc-f43b-434e-8886-3c62df1297b2%2Flongcat.png?v=1576790382865";
+  const longcat_element = document.createElement("img");
+  longcat_element.src = longcat_src;
+  longcat_element.onload = () => {
+    longcat_element.style.position = "absolute";
+    longcat_element.style.bottom = "-10px";
+    longcat_element.style.right = 0;
+    longcat_element.style.zIndex = 5000;
+    longcat_element.className = "longcat";
+
+    html.appendChild(longcat_element);
+    html.addEventListener("mousemove", e => {
+      longcat_element.style.left = `${e.clientX}px`;
+      longcat_element.style.height = `${html.clientHeight - e.clientY}px`;
     });
-});
+  };
+}
